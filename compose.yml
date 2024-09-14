@@ -1,0 +1,10 @@
+ services:
+   webplantilla:
+     build: ./websimple
+     ports:
+       - 8000:8000
+   websimple:
+     build: ./webplantilla 
+     ports:
+       - 8080:80
+   
